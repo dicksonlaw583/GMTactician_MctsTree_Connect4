@@ -1,6 +1,9 @@
 ///@desc Draw status
 var yy = y;
 
+// Set activeness
+draw_set_alpha(active ? 1 : 0.6);
+
 // Player piece
 draw_sprite(player ? spr_red : spr_yellow, 0, x, yy);
 
@@ -19,3 +22,4 @@ if (instance_exists(daemon)) {
 
 // Reset
 draw_set_halign(fa_left);
+draw_set_alpha(1);

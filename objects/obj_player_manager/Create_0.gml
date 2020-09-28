@@ -1,21 +1,17 @@
 ///@desc Setup
 statusText = "";
-thinkProgress = 0;
 image_speed = 0;
-boardManager = noone;
 daemon = noone;
-active = true;
+active = false;
 
 // Activate this player
-activateYourTurn = function(_boardManager) {
-	boardManager = _boardManager;
+activateYourTurn = function() {
 	statusText = "Your Move";
 	active = true;
 };
 
 // Activate this player as thinking
-activateThinking = function(_boardManager, _mctsDaemon) {
-	boardManager = _boardManager;
+activateThinking = function(_mctsDaemon) {
 	statusText = "Thinking...";
 	daemon = _mctsDaemon;
 	active = true;
@@ -25,6 +21,7 @@ activateThinking = function(_boardManager, _mctsDaemon) {
 deactivate = function() {
 	statusText = "";
 	active = false;
+	daemon = noone;
 };
 
 // Set outcome

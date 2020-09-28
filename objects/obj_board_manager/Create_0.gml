@@ -1,7 +1,6 @@
 ///@desc Setup
 
 // Game state
-state = Connect4State(array_create(42, -1), choose(0, 1));
 boardInsts = array_create(42, noone);
 
 // Insert a piece
@@ -14,6 +13,13 @@ insertPiece = function(_pos, _player) {
 		cy = posY;
 		setPlayer(_player);
 		other.boardInsts[_pos] = id;
+	}
+};
+
+// Highlight winners
+highlightWinners = function(playoutResult) {
+	for (var i = 1; i <= 4; ++i) {
+		boardInsts[playoutResult[i]].flash();
 	}
 };
 

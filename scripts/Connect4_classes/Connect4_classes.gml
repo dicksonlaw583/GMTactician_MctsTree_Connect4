@@ -27,7 +27,9 @@ function Connect4State(_board, _player) constructor {
 	///@func clone()
 	///@desc Return an exact copy of the current state.
 	static clone = function() {
-		return new Connect4State(board, player);
+		var _board = array_create(42);
+		array_copy(_board, 0, board, 0, 42);
+		return new Connect4State(_board, player);
 	};
 	
 	///@func isFinal()

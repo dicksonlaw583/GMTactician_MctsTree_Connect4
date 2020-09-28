@@ -6,7 +6,7 @@ currentPlayer = global.state.player;
 // Set AI turn
 with (obj_player_manager) {
 	if (player == global.state.player) {
-		activateThinking(obj_board_manager, other.daemon);
+		activateThinking(other.daemon);
 		break;
 	}
 }

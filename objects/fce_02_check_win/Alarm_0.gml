@@ -20,9 +20,7 @@ else {
 	}
 	// If not tie, highlight the winning pieces
 	if (!is_undefined(playoutResult[1])) {
-		for (var i = 1; i <= 4; ++i) {
-			obj_board_manager.boardInsts[playoutResult[i]].flash();
-		}
+		obj_board_manager.highlightWinners(playoutResult);
 	}
 	// Next step, go to waiting state
 	instance_change(fce_03_game_over, true);
