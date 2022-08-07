@@ -17,5 +17,17 @@ ini_close();
 global.playerIsAi = [false, true];
 global.playerName = ["Player 1", "Player 2"];
 
+// Multiplayer setup
+global.mpLocalPlayer = 0;
+global.mpOtherPlayer = 1;
+global.playerIsRemote = [false, true];
+rollback_define_input({ escape: vk_escape });
+rollback_define_input_frame_delay(10);
+rollback_display_events(false);
+
 // Boot up
-room_fadeto(rm_menu);
+if (rollback_join_game(true)) {
+	room_fadeto(rm_mp_joining);
+} else {
+	room_fadeto(rm_menu);
+}

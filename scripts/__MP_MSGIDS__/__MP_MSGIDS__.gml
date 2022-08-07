@@ -1,0 +1,9 @@
+enum MSGID {
+	_INVALID_,
+	READY,
+	YOU_PLAY_FIRST,
+	YOUR_MOVE,
+	MAKE_MOVE,
+	YOU_WIN,
+	CHAT,
+}

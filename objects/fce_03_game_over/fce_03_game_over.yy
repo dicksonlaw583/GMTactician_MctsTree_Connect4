@@ -2,6 +2,7 @@
   "spriteId": null,
   "solid": false,
   "visible": false,
+  "managed": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -18,8 +19,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"fce_03_game_over","path":"objects/fce_03_game_over/fce_03_game_over.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"fce_03_game_over","path":"objects/fce_03_game_over/fce_03_game_over.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,6 +30,5 @@
   },
   "resourceVersion": "1.0",
   "name": "fce_03_game_over",
-  "tags": [],
   "resourceType": "GMObject",
 }

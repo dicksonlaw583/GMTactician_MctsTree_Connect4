@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,19 +22,19 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_player_manager","path":"objects/obj_player_manager/obj_player_manager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_player_manager","path":"objects/obj_player_manager/obj_player_manager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":6,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "0",
         "1",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"global.playerName[player]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"label","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":7,"value":"$FFCCCCCC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"colour","tags":[],"resourceType":"GMObjectProperty",},
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"player","resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"global.playerName[player]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"label","resourceType":"GMObjectProperty",},
+    {"varType":7,"value":"$FFCCCCCC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"colour","resourceType":"GMObjectProperty",},
     {"varType":5,"value":"fnt_text","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMFont",
-      ],"resourceVersion":"1.0","name":"font","tags":[],"resourceType":"GMObjectProperty",},
+      ],"resourceVersion":"1.0","name":"font","resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
@@ -42,6 +43,5 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_player_manager",
-  "tags": [],
   "resourceType": "GMObject",
 }

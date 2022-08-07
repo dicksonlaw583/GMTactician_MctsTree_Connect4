@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": null,
@@ -21,8 +22,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_background_symbol","path":"objects/obj_background_symbol/obj_background_symbol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_background_symbol","path":"objects/obj_background_symbol/obj_background_symbol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,6 +33,5 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_background_symbol",
-  "tags": [],
   "resourceType": "GMObject",
 }
