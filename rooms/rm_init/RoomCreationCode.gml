@@ -1,13 +1,13 @@
 // Seed the PRNG
-randomize();
+xrandomize();
 
 // Self-test
 connect4_test_all();
 
 // Set up background decor
-var times = irandom_range(15, 20);
+var times = xirandom_range(15, 20);
 repeat (times) {
-	instance_create_layer(irandom(room_width), irandom(room_height), "BackInstances", obj_background_symbol);
+	instance_create_layer(xirandom(room_width), xirandom(room_height), "BackInstances", obj_background_symbol);
 }
 
 // Global variables

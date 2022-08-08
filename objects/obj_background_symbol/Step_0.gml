@@ -10,7 +10,7 @@ image_xscale = scale*sin(theta);
 
 ///Respawn at the top randomly upon reaching the bottom
 if (y > room_height+sprite_height) {
-	x = irandom(room_width);
+	x = xirandom(room_width);
 	y = -80;
 	event_perform(ev_create, 0);
 }

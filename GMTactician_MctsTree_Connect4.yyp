@@ -55,6 +55,7 @@
     {"id":{"name":"snd_click","path":"sounds/snd_click/snd_click.yy",},"order":0,},
     {"id":{"name":"connect4_test_read_memo","path":"scripts/connect4_test_read_memo/connect4_test_read_memo.yy",},"order":4,},
     {"id":{"name":"fce_01b_ai_move","path":"objects/fce_01b_ai_move/fce_01b_ai_move.yy",},"order":2,},
+    {"id":{"name":"XorWow_classes","path":"scripts/XorWow_classes/XorWow_classes.yy",},"order":0,},
     {"id":{"name":"connect4_test_all","path":"scripts/connect4_test_all/connect4_test_all.yy",},"order":0,},
     {"id":{"name":"fce_m00_init","path":"objects/fce_m00_init/fce_m00_init.yy",},"order":0,},
     {"id":{"name":"Connect4Tree_classes","path":"scripts/Connect4Tree_classes/Connect4Tree_classes.yy",},"order":1,},
@@ -117,6 +118,7 @@
     {"folderPath":"folders/System/Multiplayer.yy","order":4,"resourceVersion":"1.0","name":"Multiplayer","resourceType":"GMFolder",},
     {"folderPath":"folders/Libraries/Multiplayer.yy","order":8,"resourceVersion":"1.0","name":"Multiplayer","resourceType":"GMFolder",},
     {"folderPath":"folders/Libraries_config/Multiplayer.yy","order":3,"resourceVersion":"1.0","name":"Multiplayer","resourceType":"GMFolder",},
+    {"folderPath":"folders/Libraries/GMXorWow.yy","order":9,"resourceVersion":"1.0","name":"GMXorWow","resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
