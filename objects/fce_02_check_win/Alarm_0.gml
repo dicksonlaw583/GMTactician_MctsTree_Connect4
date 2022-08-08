@@ -19,7 +19,7 @@ else {
 		}
 	}
 	// If not tie, highlight the winning pieces
-	if (!is_undefined(playoutResult[1])) {
+	if (is_real(playoutResult[1])) {
 		obj_board_manager.highlightWinners(playoutResult);
 	}
 	// Next step, go to waiting state
