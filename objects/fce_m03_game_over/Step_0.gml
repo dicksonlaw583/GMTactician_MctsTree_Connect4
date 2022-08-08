@@ -4,7 +4,7 @@ if (mouse_check_button_released(mb_left) && alarm[0] < 0 && !is_undefined(obj_bo
 		readies[global.mpLocalPlayer] = true;
 		event_perform(ev_alarm, 1);
 		if (!readies[global.mpOtherPlayer]) {
-			textHint = instance_create_layer(room_width/2, room_height/2, "OverInstances", obj_text, {
+			textHint = instance_create_layer(room_width/2, 10, "OverInstances", obj_text, {
 				text: "Waiting for your opponent to confirm...",
 			});
 		}
