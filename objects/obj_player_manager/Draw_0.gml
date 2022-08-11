@@ -4,6 +4,14 @@ var yy = y;
 // Set activeness
 draw_set_alpha(active ? 1 : 0.6);
 
+// Avatar
+if (sprite_exists(avatar)) {
+	var avatarHalfWidth = sprite_get_width(avatar) div 2;
+	var avatarHalfHeight = sprite_get_height(avatar) div 2;
+	draw_sprite(avatar, 0, x-avatarHalfWidth, yy-avatarHalfHeight);
+	yy += avatarHalfHeight*2+16;
+}
+
 // Player piece
 draw_sprite(player ? spr_red : spr_yellow, 0, x, yy);
 

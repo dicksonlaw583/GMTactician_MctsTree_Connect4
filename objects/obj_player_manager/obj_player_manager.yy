@@ -31,6 +31,7 @@
         "1",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"player","resourceType":"GMObjectProperty",},
     {"varType":4,"value":"global.playerName[player]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"label","resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"global.playerAvatar[player]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"avatar","resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FFCCCCCC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"colour","resourceType":"GMObjectProperty",},
     {"varType":5,"value":"fnt_text","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMFont",

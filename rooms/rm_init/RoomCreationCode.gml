@@ -21,6 +21,7 @@ global.playerName = ["Player 1", "Player 2"];
 global.mpLocalPlayer = 0;
 global.mpOtherPlayer = 1;
 global.playerIsRemote = [false, true];
+global.playerAvatar = [-1, -1];
 rollback_display_events(false);
 
 // Boot up
