@@ -8,7 +8,7 @@ if (global.mpLocalPlayer != 0) {
 		}
 		// Play appropriate sound
 		if (frac(playoutResult[0]) == 0) {
-			if (global.playerIsAi[playoutResult[0]]) {
+			if (global.playerIsRemote[playoutResult[0]]) {
 				audio_play_sound(snd_lose, 1, false);
 			} else {
 				audio_play_sound(snd_win, 1, false);
