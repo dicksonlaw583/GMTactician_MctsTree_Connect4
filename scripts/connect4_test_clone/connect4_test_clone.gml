@@ -1,4 +1,5 @@
 ///@desc connect4_test_clone()
+///@desc Test Connect 4 state cloning.
 function connect4_test_clone() {
 	var state, fixture;
 	

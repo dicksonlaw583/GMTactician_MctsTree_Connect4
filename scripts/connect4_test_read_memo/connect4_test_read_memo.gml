@@ -1,4 +1,5 @@
 ///@desc connect4_test_read_memo()
+///@desc Test Connect 4 memo restoration.
 function connect4_test_read_memo() {
 	var state, memo, expectedState;
 	

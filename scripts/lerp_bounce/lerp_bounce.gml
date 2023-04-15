@@ -1,6 +1,6 @@
-///@func lerp_bounce(val0, val1, t)
-///@param {real} val0 Value for when t=0
-///@param {real} val1 Value for when t=1
+///@func lerp_bounce(b, c, t)
+///@param {real} b Value for when t=0
+///@param {real} c Value for when t=1
 ///@param {real} t Interpolating factor in [0, 1]
 ///@desc Interpolate with a bouncing effect
 function lerp_bounce(b, c, t) {

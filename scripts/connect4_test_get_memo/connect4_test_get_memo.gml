@@ -1,4 +1,5 @@
 ///@desc connect4_test_get_memo()
+///@desc Test Connect 4 memo fetching.
 function connect4_test_get_memo() {
 	var state, memo, expectedMemo;
 	

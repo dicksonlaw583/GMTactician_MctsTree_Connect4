@@ -3,7 +3,7 @@
 // Put the slider in the right place
 baseX = x;
 baseY = y;
-x = relerp(minValue, maxValue, value, baseX-width/2, baseX+width/2);
+x = relerp(minValue, maxValue, real(value), baseX-width/2, baseX+width/2);
 
 // Variables for dragging
 dragging = false;

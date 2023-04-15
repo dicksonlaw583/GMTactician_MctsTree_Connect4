@@ -1,12 +1,13 @@
 ///@func Connect4MctsTree(state)
-///@param {State} state The root state to start at
+///@param {Struct.Connect4State} state The root state to start at
 ///@desc Connect 4 MCTS tree
-function Connect4MctsTree(_state) : MctsTree(_state) constructor {
-	///@func interpret(playoutResult, player)
-	///@param {PlayoutResult} playoutResult
-	///@param {Player} player
+function Connect4MctsTree(state) : MctsTree(state) constructor {
+	///@func interpret(pr, player)
+	///@param {Array} pr The playout result to interpret
+	///@param {Real} player The player to view the playout as
+	///@self Struct.Connect4MctsTree
 	///@desc Return a score using the given playout result, from the given player's perspective
-	static interpret = function(_pr, _player) {
-		return is_undefined(_pr) ? 0.5 : lerp(1-_pr[0], _pr[0], _player);
+	static interpret = function(pr, player) {
+		return is_undefined(pr) ? 0.5 : lerp(1-pr[0], pr[0], player);
 	};
 }
