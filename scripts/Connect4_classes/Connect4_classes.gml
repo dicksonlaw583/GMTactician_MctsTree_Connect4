@@ -1,14 +1,15 @@
 ///@func Connect4State(board, player)
-///@param {Piece[42]} board
-///@param {Player} player
+///@param {Array<Real>} board The board state (0/1=piece, -1=empty)
+///@param {Real} player The player whose turn it is
 ///@desc A Connect-4 game state for GMTactician
-function Connect4State(_board, _player) constructor {
-	board = _board;
-	player = _player;
+function Connect4State(board, player) constructor {
+	self.board = board;
+	self.player = player;
 	
 	#region GMTactician required methods
 	///@func readMemo(memo)
-	///@param {Memo} memo
+	///@param {Array<Real>} memo
+	///@self Struct.Connect4State
 	///@desc Restore the state to the given memo. 
 	static readMemo = function(memo) {
 		array_copy(board, 0, memo, 0, 42);
@@ -16,6 +17,8 @@ function Connect4State(_board, _player) constructor {
 	};
 	
 	///@func getMemo()
+	///@return {Array<Real>}
+	///@self Struct.Connect4State
 	///@desc Return a memo from the current state.
 	static getMemo = function() {
 		var memo = array_create(43);
@@ -25,6 +28,7 @@ function Connect4State(_board, _player) constructor {
 	};
 	
 	///@func clone()
+	///@self Struct.Connect4State
 	///@desc Return an exact copy of the current state.
 	static clone = function() {
 		var _board = array_create(42);
@@ -33,12 +37,14 @@ function Connect4State(_board, _player) constructor {
 	};
 	
 	///@func isFinal()
+	///@self Struct.Connect4State
 	///@desc Return whether the current state represents a finished game.
 	static isFinal = function() {
 		return !is_undefined(getPlayoutResult());
 	};
 	
 	///@func getMoves()
+	///@self Struct.Connect4State
 	///@desc Return an array of moves possible from the current state. Assumes that the game is not already over.
 	static getMoves = function() {
 		var moves = [];
@@ -52,20 +58,24 @@ function Connect4State(_board, _player) constructor {
 	};
 	
 	///@func getCurrentPlayer()
+	///@self Struct.Connect4State
 	///@desc Return who is the current player.
 	static getCurrentPlayer = function() {
 		return player;
 	};
 	
 	///@func isLegal(move)
-	///@param {Move} move
+	///@param {Real} move
+	///@self Struct.Connect4State
 	///@desc Return whether the given move is legal for the current state.
 	static isLegal = function(move) {
 		return move >= 0 && move <= 6 && board[move] < 0;
 	};
 	
 	///@func applyMove(move)
-	///@param {Move} move
+	///@param {Real} move
+	///@return {Real}
+	///@self Struct.Connect4State
 	///@desc Make the specified move on the current state.
 	static applyMove = function(move) {
 		// Push as far down as available
@@ -84,6 +94,7 @@ function Connect4State(_board, _player) constructor {
 	};
 	
 	///@func getPlayoutResult()
+	///@self Struct.Connect4State
 	///@desc Return a playout result describing the current state.
 	static getPlayoutResult = function() {
 		var rowOffset, offset;

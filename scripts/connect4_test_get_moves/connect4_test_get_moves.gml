@@ -1,4 +1,5 @@
 ///@func connect4_test_get_moves()
+///@desc Test Connect 4 move enumeration.
 function connect4_test_get_moves() {
 	var state, expectedMoves, gotMoves;
 	

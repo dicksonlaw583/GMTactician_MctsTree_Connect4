@@ -1,4 +1,5 @@
 ///@func connect4_test_is_legal()
+///@desc Test Connect 4 move checking.
 function connect4_test_is_legal() {
 	var state;
 	

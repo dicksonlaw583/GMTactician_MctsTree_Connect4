@@ -1,4 +1,5 @@
 ///@func connect4_test_all()
+///@desc Test all Connect 4 class functions.
 function connect4_test_all() {
 	var timeA = current_time;
 	

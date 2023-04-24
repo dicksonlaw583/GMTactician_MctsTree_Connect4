@@ -1,4 +1,5 @@
 ///@func connect4_test_final_get_playout_result()
+///@desc Test Connect 4 interpretation of playout results.
 function connect4_test_final_get_playout_result() {
 	var state, expected, got;
 	

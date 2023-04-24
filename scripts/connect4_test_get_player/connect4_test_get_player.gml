@@ -1,4 +1,5 @@
 ///@func connect4_test_get_player()
+///@desc Test Connect 4 turn keeping.
 function connect4_test_get_player() {
 	var state;
 	

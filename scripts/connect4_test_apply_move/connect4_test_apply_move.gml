@@ -1,4 +1,5 @@
 ///@func connect4_test_apply_move()
+///@desc Test Connect 4 making moves.
 function connect4_test_apply_move() {
 	var state, move, expectedState, insertPos;
 	

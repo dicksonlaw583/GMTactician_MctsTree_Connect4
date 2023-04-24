@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_text",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -18,32 +22,28 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [
-    {"varType":5,"value":"fnt_text","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"font","varType":5,"value":"fnt_text","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMFont",
-      ],"resourceVersion":"1.0","name":"font","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":7,"value":"$FFCCCCCC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"colour","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"\"\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"text","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":6,"value":"fa_center","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+      ],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"colour","varType":7,"value":"$FFCCCCCC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","varType":4,"value":"\"\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"halign","varType":6,"value":"fa_center","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "fa_left",
         "fa_center",
         "fa_right",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"halign","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":6,"value":"fa_top","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+      ],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"valign","varType":6,"value":"fa_top","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "fa_top",
         "fa_middle",
         "fa_bottom",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"valign","tags":[],"resourceType":"GMObjectProperty",},
+      ],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
     "name": "UI",
     "path": "folders/System/UI.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_text",
-  "tags": [],
-  "resourceType": "GMObject",
 }
